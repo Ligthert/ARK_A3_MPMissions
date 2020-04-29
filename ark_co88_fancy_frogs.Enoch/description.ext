@@ -1,0 +1,70 @@
+#include "admiral\admiral.h"
+#include "hull3\hull3.h"
+
+enableDebugConsole = 1;
+disableChannels[]={{2,true,true},{4,true,true},{6,true,true}};
+
+onLoadName = "Fancy Frogs";
+onLoadMission = "I'm too sexy for my love. Too sexy for my love. Love's going to leave me. I'm too sexy for my shirt. Too sexy for my shirt. So sexy it hurts. And I'm too sexy for Milan. Too sexy for Milan. New York, and Japan. I'm too sexy for your party. Too sexy for your party. No way I'm disco dancing.";
+author = "Sacha";
+loadScreen = "fancy_frogs.paa";
+
+class Header
+{
+    gameType = Coop;
+    minPlayers = 1;
+    maxPlayers = 89;
+};
+
+respawn = 0;
+respawndelay = 3;
+respawnTemplates[] = {"Hull3_RespawnHandler"};
+
+class Params {
+    class Hull3_Date {
+        title = "Moon Phase";
+        values[] = {0,1};
+        texts[] = {"New Moon", "Full Moon"};
+        default = 0;
+        code = "hull3_mission_date = %1";
+    };
+
+    class Hull3_TimeOfDay {
+        title = "Time of Day";
+        values[] = {0,1,2,3,4,5,6,7};
+        texts[] = {"Dawn", "Early Morning", "Morning", "Noon", "Afternoon", "Evening", "Dusk", "Night"};
+        default = 6;
+        code = "hull3_mission_timeOfDay = %1";
+    };
+
+    class Hull3_Fog {
+        title = "Fog";
+        values[] = {0,1,2};
+        texts[] = {"None", "Light", "Heavy"};
+        default = 1;
+        code = "hull3_mission_fog = %1";
+    };
+
+    class Hull3_Weather {
+        title = "Weather";
+        values[] = {0,1,2,3,4,5,6,7,8,9};
+        texts[] = {"Random", "Clear (Calm)", "Clear (Light Winds)", "Clear (Strong Winds)", "Overcast (Calm)", "Overcast (Light Winds)", "Overcast (Strong Winds)", "Rain (Light Winds)", "Rain (Strong Winds)", "Storm"};
+        default = 5;
+        code = "hull3_mission_weather = %1";
+    };
+
+    class Hull3_SafetyTimer {
+        title = "Safety Timer";
+        values[] = {9999,0};
+        texts[] = {"On", "Off"};
+        default = 9999;
+        code = "hull3_mission_safetyTimerEnd = %1";
+    };
+};
+
+class CfgDebriefingSections {
+    class acex_killTracker {
+        title = "Acex Killed Events";
+        variable = "acex_killTracker_outputText";
+    };
+};
