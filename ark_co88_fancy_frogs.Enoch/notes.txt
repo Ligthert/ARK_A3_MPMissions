@@ -1,8 +1,3 @@
-- Look into https://community.bistudio.com/wiki/setTriggerInterval + https://forums.bohemia.net/forums/topic/178685-list-all-triggers-on-the-map/
-- Make XEH for cars and tanks and shit http://alivemod.com/wiki/index.php/Script_Snippets#Adding_Custom_Inits_to_Spawned_Units ("LandVehicle")
-- Make script that tells the vehicle to move to roads (https://community.bistudio.com/wiki/nearRoads)
-- Clean-up script
+- DediTesting
 
-
-
-_alltriggers = allMissionObjects "EmptyDetector";
+- Do not use third party AI ‘enhancement’ scripts (if you write you own please specify in the submission and explain what it does).
