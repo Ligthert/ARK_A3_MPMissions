@@ -25,21 +25,21 @@ player createDiaryRecord ["Diary", ["Mission","
 - Destroy the equipment in these labs:<br/>
  - <marker name='factory1'>The Refinery</marker>, this factory refines raw materials into its purest form before being used for further processing. Destroy the tank in the building to disable the centrifuges and everything in the immediate area.<br/>
  - <marker name='factory2'>The Mixer</marker>, the exact position isn't known as it resides in a larger factory district in Livonia. In this factory the purified ingredients are mixed into a new solution. The key component is most likely the generater as it provides the power to the storage system of the volitile goods. Destroying this and fysics and chemistry will do the rest.<br/>
- - <marker name='factory3'>Factory #3</marker><br/>
+ - <marker name='factory3'>The Cloud Seeder</marker> is a converted Mi-6 that loads up the final product and disperses it in the sky. Disable this vehicle to stop the spread of these chemicals.<br/>
  <br/>
  <b>Secundary tasks:</b><br/>
  - Disable Anti-air installations:<br/>
-  - <marker name='AA1'>AA #1</marker>, Flak Tower 77<br/>
-  - <marker name='AA2'>AA #2</marker>, City 13<br/>
-  - <marker name='AA3'>AA #3</marker>, Radar 56<br/>
+  - <marker name='AA1'>Flak Tower 77</marker>, 2 x Zu-23 on top of towers on an old castle ruin<br/>
+  - <marker name='AA2'>City 13</marker>, 2 x Tunghuska in this compound<br/>
+  - <marker name='AA3'>Radar 56</marker>, A small encampment with what looks like a Zeus. Intel is unclear.<br/>
 <br/>
 Engagement-ranges of the AA-sites are marked on the map. Avoid flying with anything in their until the threats have ben neutrilized.<br/>
 <br/>
 Targets of Opportunity:<br/>
 - <marker name='too1'>The Observation Post</marker>: abandoned after the 3rd world war, this structure has found new uses again as tension rises.<br/>
 - <marker name='too2'>This comms-relay</marker> enables the ruskies long-range communication with the Kremlin, damaging the generator will give us more time to manouvre.<br/>
-- <marker name='too3'>TODO TODO TODO</marker><br/>
-- <marker name='too4'>TODO TODO TODO</marker><br/>
+- <marker name='too3'>The Ammo-Cache</marker>, hidden here is ammo for the entire Russian operation in this area of operation. Disable this and life will be significantly easier.<br/>
+- <marker name='too4'>The Temporary Field HQ</marker>, this site houses the command elements is in charge of defending this area. Sanitize it if possible.<br/>
 "]];
 
 // Execution
@@ -77,5 +77,5 @@ Take care with the heli's:<br/>
 // Credits
 player createDiaryRecord ["Diary", ["Credits", "
 <br/>
-Gloriously constructed by Sacha.
+Gloriously glued together by Sacha.
 "]];
