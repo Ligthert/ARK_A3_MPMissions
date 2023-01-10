@@ -1,0 +1,28 @@
+Old admin section:
+
+// Administration
+player createDiaryRecord ["Diary", ["Administration","
+<br/>
+There are 6 additional endings defined in description.ext:<br/>
+End1: Mission win<br/>
+End2: Partial mission win<br/>
+End3: Mission Failure<br/>
+End4: BLUFOR wins<br/>
+End5: REDFOR wins<br/>
+End6: GRNFOR wins<br/>
+<br/>
+<br/>
+Relevant for this scenario are the following two:<br/>
+1. end4 (spais win)<br/>
+2. end6 (merc win)<br/>
+<br/>
+If BLUFOR gets wiped out, call End6.<br/>
+If GRNFOR gets wiped out, call End4.<br/>
+After 60 seconds a trigger should activate when all the devices have been destroyed.<br/>
+"]];
+
+
+
+
+17:49:10 "0         [WARN]    hull3.gear.assign                No faction found with name 'SPAIS' for unit 'B Alpha 1-1:1 (Sacha)'!"
+17:49:10 "0         [WARN]    hull3.gear.assign                No gear class found with name '<null>' in gear template '' for unit 'B Alpha 1-1:1 (

@@ -1,0 +1,116 @@
+#include "hull3\hull3.h"
+
+allowProfileGlasses = 0;
+enableDebugConsole = 1;
+disableChannels[]={{2,true,true},{4,true,true},{6,true,true}};
+
+onLoadName = "SPAIS vs MERCS";
+onLoadMission = "Yo, I'll tell you what I want, what I really, really want. So tell me what you want, what you really, really want. I'll tell you what I want, what I really, really want. So tell me what you want, what you really, really want. I wanna, (ha) I wanna, (ha) I wanna, (ha) I wanna, (ha). I wanna really, really, really wanna zigazig ah";
+author = "Sacha";
+loadScreen = "spais_vs_mercs.paa";
+
+class Header
+{
+    gameType = TDM;
+    minPlayers = 1;
+    maxPlayers = 120;
+};
+
+respawn = 0;
+respawndelay = 3;
+respawnTemplates[] = {"Hull3_RespawnHandler"};
+
+class Params {
+    class Hull3_Date {
+        title = "Moon Phase";
+        values[] = {0,1};
+        texts[] = {"New Moon", "Full Moon"};
+        default = 0;
+        code = "hull3_mission_date = %1";
+    };
+
+    class Hull3_TimeOfDay {
+        title = "Time of Day";
+        values[] = {0,1,2,3,4,5,6,7};
+        texts[] = {"Dawn", "Early Morning", "Morning", "Noon", "Afternoon", "Evening", "Dusk", "Night"};
+        default = 7;
+        code = "hull3_mission_timeOfDay = %1";
+    };
+
+    class Hull3_Fog {
+        title = "Fog";
+        values[] = {0,1,2};
+        texts[] = {"None", "Light", "Heavy"};
+        default = 0;
+        code = "hull3_mission_fog = %1";
+    };
+
+    class Hull3_Weather {
+        title = "Weather";
+        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12};
+        texts[] = {"Random", "Clear (Calm)", "Clear (Light Winds)", "Clear (Strong Winds)", "Overcast (Calm)", "Overcast (Light Winds)", "Overcast (Strong Winds)", "Rain (Light Winds)", "Rain (Strong Winds)", "Rain (Storm)", "Snow (Light Winds)", "Snow (Strong Winds)", "Snow (Storm)"};
+        default = 4;
+        code = "hull3_mission_weather = %1";
+    };
+
+    class Hull3_SafetyTimer {
+        title = "Safety Timer";
+        values[] = {9999,0};
+        texts[] = {"On", "Off"};
+        default = 9999;
+        code = "hull3_mission_safetyTimerEnd = %1";
+    };
+};
+
+class CfgDebriefingSections {
+    class acex_killTracker {
+        title = "Acex Killed Events";
+        variable = "acex_killTracker_outputText";
+    };
+};
+
+// DEBRIEFINGS
+class CfgDebriefing
+{
+    class End1
+    {
+        title = "Mission Success!";
+        subtitle = "We are the winrars!";
+        description = "Grate Jorb Peoples! We have showed the enemy we are as hard as a coffin nail.";
+    };
+
+    class End2
+    {
+        title = "Partial Success";
+        subtitle = "We answered the Call of Duty!";
+        description = "And you nearly got it right. Back to Minecraft?";
+    };
+
+    class End3
+    {
+        title = "Mission Failure";
+        subtitle = "We have botched this job.";
+        description = "Better luck next time!";
+    };
+    class End4
+    {
+        title = "BLUFOR wins!";
+        subtitle = "Good job being total badasses BLUFOR!";
+        description = "You can laugh at everyone else now.";
+    };
+
+    class End5
+    {
+        title = "REDFOR wins!";
+        subtitle = "Good job being total badasses REDFOR!";
+        description = "You can laugh at everyone else now.";
+    };
+
+    class End6
+    {
+        title = "GREENFOR wins!";
+        subtitle = "Good job being total badasses GREENFOR!";
+        description = "You can laugh at everyone else now.";
+    };
+
+};
