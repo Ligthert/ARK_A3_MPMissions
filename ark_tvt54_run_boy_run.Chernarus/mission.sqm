@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9343.249,248.285,8413.8594};
-		dir[]={-0.19557276,-0.19334446,0.96144122};
-		up[]={-0.038540125,0.9811309,0.18946435};
-		aside[]={0.97993159,0,0.199334};
+		pos[]={7319.4521,353.79025,7997.7461};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -76,6 +76,7 @@ class ScenarioData
 		minPlayers=1;
 		maxPlayers=54;
 	};
+	wreckRemovalMaxTime=3600;
 };
 class CustomAttributes
 {
@@ -127,7 +128,7 @@ class Mission
 	class Intel
 	{
 		briefingName="ark_tvt54_run_boy_run";
-		overviewText="slot GRNFOR ASL, open total of floor ((count allPlayers)/2) GRNFOR units";
+		overviewText="1:1 BLU/RED + slot GRNFOR ASL. Open total of floor((count allPlayers)/2) GRNFOR slots.";
 		timeOfChanges=28800;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -1057,7 +1058,7 @@ class Mission
 						skill=0.60000002;
 						rank="CAPTAIN";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""CO""], [""marker"", ""CO"", ""ColorYellow""]] call hull3_unit_fnc_init;";
-						description="NAPA - Commanding Officer@CO";
+						description="NAPA - Commanding Officer [JIP]@CO";
 						isPlayable=1;
 					};
 					id=47;
@@ -1098,8 +1099,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9527.6035,315.78189,5991.251};
-						angles[]={0.053282689,6.273232,6.2299027};
+						position[]={9527.6035,315.78186,5991.251};
+						angles[]={0.053284902,6.2732368,6.2299004};
 					};
 					side="Independent";
 					flags=4;
@@ -1108,20 +1109,49 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""Medic""], [""marker"", ""COM"", ""ColorYellow""]] call hull3_unit_fnc_init;";
-						description="NAPA - Platoon Medic@CO";
+						description="NAPA - Platoon Medic [JIP]@CO";
 						isPlayable=1;
 					};
 					id=48;
 					type="I_medic_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9531.5596,315.59479,5990.8027};
-						angles[]={0.053282689,6.273232,6.2299027};
+						position[]={9531.5596,315.59476,5990.8027};
+						angles[]={0.053284902,6.2732368,6.2299004};
 					};
 					side="Independent";
 					flags=4;
@@ -1130,20 +1160,49 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""Rifleman""]] call hull3_unit_fnc_init;";
-						description="NAPA - Platoon Rifleman@CO";
+						description="NAPA - Platoon Rifleman [JIP]@CO";
 						isPlayable=1;
 					};
 					id=49;
 					type="I_soldier_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9533.6025,315.48642,5991.2871};
-						angles[]={0.053281568,6.2732453,6.253861};
+						position[]={9533.6025,315.48645,5991.2866};
+						angles[]={0.053284902,6.2732368,6.2538638};
 					};
 					side="Independent";
 					flags=4;
@@ -1152,11 +1211,41 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""XO""], [""marker"", ""XO"", ""ColorYellow""]] call hull3_unit_fnc_init;";
-						description="NAPA - Executive Officer@CO";
+						description="NAPA - Executive Officer [JIP]@CO";
 						isPlayable=1;
 					};
 					id=50;
 					type="I_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -1229,8 +1318,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9530.0977,315.85663,5984.5581};
-						angles[]={0.0039967569,6.2732043,6.2818484};
+						position[]={9530.0977,315.8566,5984.5576};
+						angles[]={0.0039968039,6.2732019,6.2818413};
 					};
 					side="Independent";
 					flags=4;
@@ -1239,12 +1328,41 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""Medic""], [""marker"", ""AM"", ""ColorRed""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha Squad Medic@Alpha SL";
+						description="NAPA - Alpha Squad Medic [JIP]@Alpha SL";
 						isPlayable=1;
 					};
 					id=53;
 					type="I_medic_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -1265,8 +1383,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9526.207,315.82632,5973.5698};
-						angles[]={6.2685208,6.2732368,0.0026744273};
+						position[]={9526.207,315.82629,5973.5698};
+						angles[]={6.2685246,6.2732368,0.0026703537};
 					};
 					side="Independent";
 					flags=6;
@@ -1275,20 +1393,49 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""FTL""], [""marker"", ""A1"", ""ColorRed""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 1 Fireteam Leader@Alpha 1";
+						description="NAPA - Alpha 1 Fireteam Leader [JIP]@Alpha 1";
 						isPlayable=1;
 					};
 					id=55;
 					type="I_Soldier_TL_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9528.2236,315.80655,5971.855};
-						angles[]={6.2685208,6.2732368,0.0026744273};
+						position[]={9528.2236,315.80652,5971.855};
+						angles[]={6.2685246,6.2732368,0.0026703537};
 					};
 					side="Independent";
 					flags=4;
@@ -1297,20 +1444,49 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 1 Automatic Rifleman@Alpha 1";
+						description="NAPA - Alpha 1 Automatic Rifleman [JIP]@Alpha 1";
 						isPlayable=1;
 					};
 					id=56;
 					type="I_Soldier_AR_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9530.2246,315.81012,5971.7344};
-						angles[]={6.2685208,6.2732158,0.0026744273};
+						position[]={9530.2246,315.81009,5971.7349};
+						angles[]={6.2685246,6.2732191,0.0026703537};
 					};
 					side="Independent";
 					flags=4;
@@ -1318,20 +1494,49 @@ class Mission
 					{
 						skill=0.60000002;
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 1 Assistant Automatic Rifleman@Alpha 1";
+						description="NAPA - Alpha 1 Assistant Automatic Rifleman [JIP]@Alpha 1";
 						isPlayable=1;
 					};
 					id=57;
 					type="I_Soldier_A_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9532.2227,315.81393,5971.9185};
-						angles[]={6.2711902,6.2732048,0};
+						position[]={9532.2227,315.8139,5971.9189};
+						angles[]={6.2711945,6.2732019,0};
 					};
 					side="Independent";
 					flags=4;
@@ -1339,19 +1544,48 @@ class Mission
 					{
 						skill=0.60000002;
 						init="[this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 1 Rifleman (AT)@Alpha 1";
+						description="NAPA - Alpha 1 Rifleman (AT) [JIP]@Alpha 1";
 						isPlayable=1;
 					};
 					id=58;
 					type="I_Soldier_LAT_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=59;
-			atlOffset=3.0517578e-005;
 		};
 		class Item13
 		{
@@ -1365,8 +1599,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9525.3145,315.52048,5962.7358};
-						angles[]={6.2485366,6.2732654,0.0079935296};
+						position[]={9525.3145,315.52045,5962.7358};
+						angles[]={6.2485409,6.273272,0.0079936078};
 					};
 					side="Independent";
 					flags=6;
@@ -1375,20 +1609,49 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""FTL""], [""marker"", ""A2"", ""ColorRed""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 2 Fireteam Leader@Alpha 2";
+						description="NAPA - Alpha 2 Fireteam Leader [JIP]@Alpha 2";
 						isPlayable=1;
 					};
 					id=60;
 					type="I_Soldier_TL_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9527.3301,315.47766,5961.0918};
-						angles[]={6.2471995,6.2732654,0.0079935296};
+						position[]={9527.3301,315.47763,5961.0918};
+						angles[]={6.2471962,6.273272,0.0079936078};
 					};
 					side="Independent";
 					flags=4;
@@ -1397,20 +1660,49 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 2 Automatic Rifleman@Alpha 2";
+						description="NAPA - Alpha 2 Automatic Rifleman [JIP]@Alpha 2";
 						isPlayable=1;
 					};
 					id=61;
 					type="I_Soldier_AR_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9529.332,315.48621,5960.8853};
-						angles[]={6.2471995,6.2732654,0.0079935296};
+						position[]={9529.332,315.48618,5960.8848};
+						angles[]={6.2471962,6.273272,0.0079936078};
 					};
 					side="Independent";
 					flags=4;
@@ -1418,20 +1710,49 @@ class Mission
 					{
 						skill=0.60000002;
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 2 Assistant Automatic Rifleman@Alpha 2";
+						description="NAPA - Alpha 2 Assistant Automatic Rifleman [JIP]@Alpha 2";
 						isPlayable=1;
 					};
 					id=62;
 					type="I_Soldier_A_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9532.332,315.51215,5960.939};
-						angles[]={6.2471995,6.2732649,0.0079935296};
+						position[]={9532.332,315.51212,5960.939};
+						angles[]={6.2471962,6.273272,0.0079936078};
 					};
 					side="Independent";
 					flags=4;
@@ -1439,19 +1760,47 @@ class Mission
 					{
 						skill=0.60000002;
 						init="[this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 2 Rifleman (AT)@Alpha 2";
+						description="NAPA - Alpha 2 Rifleman (AT) [JIP]@Alpha 2";
 						isPlayable=1;
 					};
 					id=63;
 					type="I_Soldier_LAT_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=64;
-			atlOffset=3.0517578e-005;
 		};
 		class Item14
 		{
@@ -1465,8 +1814,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9525.4092,315.03162,5953.1079};
-						angles[]={6.2259154,6.2732711,0.027990974};
+						position[]={9525.4092,315.03159,5953.1079};
+						angles[]={6.2259207,6.273272,0.02799508};
 					};
 					side="Independent";
 					flags=6;
@@ -1475,20 +1824,49 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""FTL""], [""marker"", ""A3"", ""ColorRed""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 3 Fireteam Leader@Alpha 3";
+						description="NAPA - Alpha 3 Fireteam Leader [JIP]@Alpha 3";
 						isPlayable=1;
 					};
 					id=65;
 					type="I_Soldier_TL_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9527.4316,314.9595,5950.8618};
-						angles[]={6.2259154,6.2732711,0.027990974};
+						position[]={9527.4316,314.95947,5950.8618};
+						angles[]={6.2259207,6.273272,0.02799508};
 					};
 					side="Independent";
 					flags=4;
@@ -1497,20 +1875,49 @@ class Mission
 						skill=0.60000002;
 						rank="CORPORAL";
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 3 Automatic Rifleman@Alpha 3";
+						description="NAPA - Alpha 3 Automatic Rifleman [JIP]@Alpha 3";
 						isPlayable=1;
 					};
 					id=66;
 					type="I_Soldier_AR_F";
-					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9529.4336,315.00897,5950.7607};
-						angles[]={6.2312346,6.2732711,0.022659576};
+						position[]={9529.4336,315.00894,5950.7607};
+						angles[]={6.2312269,6.273272,0.022654373};
 					};
 					side="Independent";
 					flags=4;
@@ -1518,20 +1925,50 @@ class Mission
 					{
 						skill=0.60000002;
 						init=" [this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 3 Assistant Automatic Rifleman@Alpha 3";
+						description="NAPA - Alpha 3 Assistant Automatic Rifleman [JIP]@Alpha 3";
 						isPlayable=1;
 					};
 					id=67;
 					type="I_Soldier_A_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9531.4336,315.0513,5950.7021};
-						angles[]={6.2312346,6.2737126,0.022659576};
+						position[]={9531.4336,315.05124,5950.7017};
+						angles[]={6.2312269,6.2737083,0.022654373};
 					};
 					side="Independent";
 					flags=4;
@@ -1539,19 +1976,48 @@ class Mission
 					{
 						skill=0.60000002;
 						init="[this, [""faction"", ""CUP_NAPA_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
-						description="NAPA - Alpha 3 Rifleman (AT)@Alpha 3";
+						description="NAPA - Alpha 3 Rifleman (AT) [JIP]@Alpha 3";
 						isPlayable=1;
 					};
 					id=68;
 					type="I_Soldier_LAT_F";
-					atlOffset=6.1035156e-005;
+					atlOffset=3.0517578e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=69;
-			atlOffset=3.0517578e-005;
 		};
 		class Item15
 		{
