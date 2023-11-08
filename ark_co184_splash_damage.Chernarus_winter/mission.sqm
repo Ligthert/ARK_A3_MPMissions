@@ -1,0 +1,5350 @@
+version=54;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=283;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
+	};
+	class LayerIndexProvider
+	{
+		nextID=2;
+	};
+	class Camera
+	{
+		pos[]={4725.8174,168.7813,2453.5122};
+		dir[]={-0.16729742,-0.26569167,0.94944376};
+		up[]={-0.046107139,0.96405369,0.26166809};
+		aside[]={0.98484039,3.035384e-007,0.17353579};
+	};
+};
+binarizationWanted=0;
+sourceName="ark_co184_splash_damage";
+addons[]=
+{
+	"CUP_TrackedVehicles_AAV",
+	"CUP_WheeledVehicles_HMMWV",
+	"CUP_WheeledVehicles_MTVR",
+	"A3_Characters_F",
+	"A3_Characters_F_Common",
+	"A3_Misc_F_Helpers",
+	"A3_Ui_F",
+	"A3_Modules_F_Curator_Curator",
+	"CUP_AirVehicles_Pchela1T",
+	"ace_explosives"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=9;
+		class Item0
+		{
+			className="CUP_TrackedVehicles_AAV";
+			name="CUP_TrackedVehicles_AAV";
+		};
+		class Item1
+		{
+			className="CUP_WheeledVehicles_HMMWV";
+			name="CUP_WheeledVehicles_HMMWV";
+		};
+		class Item2
+		{
+			className="CUP_WheeledVehicles_MTVR";
+			name="CUP_WheeledVehicles_MTVR";
+		};
+		class Item3
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Misc_F";
+			name="Arma 3 - 3D Aids and Helpers";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="CUP_AirVehicles_Pchela1T";
+			name="CUP_AirVehicles_Pchela1T";
+		};
+		class Item8
+		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+	};
+};
+dlcs[]=
+{
+	"CUP_Vehicles"
+};
+randomSeed=14779546;
+class ScenarioData
+{
+	author="Sacha Ligthert";
+	class Header
+	{
+		gameType="Coop";
+		minPlayers=1;
+		maxPlayers=184;
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="None";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=2;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="ark_co184_splash_damage";
+		overviewText="Slot MMG";
+		timeOfChanges=28800;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=12;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Entities
+	{
+		items=29;
+		class Item0
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4667.709,11.42084,2461.479};
+				angles[]={6.2698536,0,0.013332055};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Armored""]] call hull3_unit_fnc_init;";
+			};
+			id=246;
+			type="CUP_B_AAV_USMC";
+			atlOffset=-0.00044155121;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4697.8188,11.436601,2462.1299};
+				angles[]={0.013327583,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Armored""]] call hull3_unit_fnc_init;";
+			};
+			id=247;
+			type="CUP_B_AAV_USMC";
+			atlOffset=-0.00021934509;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4734.5479,11.465,2461.8806};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Armored""]] call hull3_unit_fnc_init;";
+			};
+			id=248;
+			type="CUP_B_AAV_USMC";
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4761.647,11.465,2462.0815};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Armored""]] call hull3_unit_fnc_init;";
+			};
+			id=249;
+			type="CUP_B_AAV_USMC";
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4656.8525,11.531914,2525.1265};
+				angles[]={0.013327583,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Car""]] call hull3_unit_fnc_init;";
+			};
+			id=250;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.0028905869;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4656.8623,11.601349,2512.6155};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Car""]] call hull3_unit_fnc_init;";
+			};
+			id=251;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.0015773773;
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4687.6465,11.557365,2524.0613};
+				angles[]={6.2698536,0,0.013332055};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Car""]] call hull3_unit_fnc_init;";
+			};
+			id=252;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.0021314621;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4687.748,11.511331,2511.4895};
+				angles[]={0.013332055,0,6.2698536};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Car""]] call hull3_unit_fnc_init;";
+			};
+			id=253;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.0022182465;
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4725.6924,11.601101,2523.5654};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.64490122;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Car""]] call hull3_unit_fnc_init;";
+			};
+			id=254;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.0018253326;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4725.6582,11.601414,2511.0981};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Car""]] call hull3_unit_fnc_init;";
+			};
+			id=255;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.0015125275;
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4751.6772,11.506898,2523.7148};
+				angles[]={6.2698536,0,0.013332055};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Car""]] call hull3_unit_fnc_init;";
+			};
+			id=256;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.0017261505;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4751.6836,11.564488,2511.1992};
+				angles[]={0.013332055,0,6.2698536};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Car""]] call hull3_unit_fnc_init;";
+			};
+			id=257;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.00045776367;
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4788.5972,11.061872,2501.6687};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Armored""]] call hull3_unit_fnc_init;";
+			};
+			id=258;
+			type="CUP_B_MTVR_Repair_USMC";
+			atlOffset=-0.00064945221;
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4655.6519,11.548223,2493.4175};
+				angles[]={6.2698579,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Truck""]] call hull3_unit_fnc_init;";
+			};
+			id=259;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.00050354004;
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4686.8486,11.601273,2493.2485};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Truck""]] call hull3_unit_fnc_init;";
+			};
+			id=260;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.0016536713;
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4724.6533,11.543571,2494.2939};
+				angles[]={0.013327583,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Truck""]] call hull3_unit_fnc_init;";
+			};
+			id=261;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.0023355484;
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4750.6533,11.602257,2494.616};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Truck""]] call hull3_unit_fnc_init;";
+			};
+			id=262;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.00066947937;
+		};
+		class Item17
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4711.6147,11.600933,2539.8948};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Car""]] call hull3_unit_fnc_init;";
+			};
+			id=263;
+			type="CUP_B_HMMWV_Unarmed_USMC";
+			atlOffset=-0.0019931793;
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4807.9121,11.107682,2501.5427};
+				angles[]={0.013327583,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Armored""]] call hull3_unit_fnc_init;";
+			};
+			id=264;
+			type="CUP_B_MTVR_Repair_USMC";
+			atlOffset=-0.0011253357;
+		};
+		class Item19
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4827.8418,11.083509,2501.2864};
+				angles[]={6.2698536,0,0.013332055};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Armored""]] call hull3_unit_fnc_init;";
+			};
+			id=265;
+			type="CUP_B_MTVR_Repair_USMC";
+			atlOffset=-0.0011091232;
+		};
+		class Item20
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4846.8032,11.162022,2501.1394};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Armored""]] call hull3_unit_fnc_init;";
+			};
+			id=266;
+			type="CUP_B_MTVR_Repair_USMC";
+			atlOffset=-0.00049972534;
+		};
+		class Item21
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={0,1000,0};
+			};
+			name="adm_hc_unit";
+			isPlayable=1;
+			description="HC";
+			id=267;
+			type="HeadlessClient_F";
+			atlOffset=1051.6;
+		};
+		class Item22
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4755.8105,8.7014389,2592.2476};
+					};
+					side="East";
+					flags=2;
+					class Attributes
+					{
+						name="droneD";
+					};
+					id=270;
+					type="O_UAV_AI";
+					atlOffset=400;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4755.8105,8.9878769,2592.2476};
+					};
+					side="East";
+					class Attributes
+					{
+						name="droneG";
+					};
+					id=271;
+					type="O_UAV_AI";
+					atlOffset=400;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=270;
+						item1=269;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=271;
+						item1=269;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=268;
+			atlOffset=400;
+		};
+		class Item23
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={829.04797,0.75042683,156.778};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="red_arrow";
+			};
+			id=272;
+			type="Sign_Arrow_Large_F";
+			atlOffset=58.832001;
+		};
+		class Item24
+		{
+			dataType="Marker";
+			position[]={4841.686,219.36897,4067.6492};
+			name="ao";
+			markerType="RECTANGLE";
+			type="";
+			a=1391.226;
+			b=1309.963;
+			id=273;
+		};
+		class Item25
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4614.8159,9,2543.5354};
+			};
+			id=274;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item26
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4642.9028,8.9486666,2553.6499};
+			};
+			id=275;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item27
+		{
+			dataType="Layer";
+			name="Baddies";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3210.6201,406.15643,2033.925};
+					};
+					side="East";
+					flags=2;
+					class Attributes
+					{
+						name="drone";
+					};
+					id=269;
+					type="CUP_O_Pchela1T_RU";
+					atlOffset=400;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			id=276;
+			atlOffset=400;
+		};
+		class Item28
+		{
+			dataType="Layer";
+			name="Blokes";
+			class Entities
+			{
+				items=61;
+				class Item0
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4706.8345,9.0014391,2552.272};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CAPTAIN";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""CO""], [""marker"", ""CO"", ""ColorYellow""]] call hull3_unit_fnc_init;";
+								description="USMC - Commanding Officer@CO";
+								isPlayer=1;
+								isPlayable=1;
+							};
+							id=1;
+							type="B_officer_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4709.8345,9.0014391,2550.2173};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Medic""], [""marker"", ""COM"", ""ColorYellow""]] call hull3_unit_fnc_init;";
+								description="USMC - Platoon Medic@CO";
+								isPlayable=1;
+							};
+							id=2;
+							type="B_medic_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4711.8345,8.9769764,2550.2017};
+								angles[]={0,0,6.2698579};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Rifleman""]] call hull3_unit_fnc_init;";
+								description="USMC - Platoon Rifleman@CO";
+								isPlayable=1;
+							};
+							id=3;
+							type="B_Soldier_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4714.8345,8.9369736,2550.1938};
+								angles[]={0,0,6.2698579};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="LIEUTENANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""XO""], [""marker"", ""XO"", ""ColorYellow""]] call hull3_unit_fnc_init;";
+								description="USMC - Executive Officer@CO";
+								isPlayable=1;
+							};
+							id=4;
+							type="B_officer_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=5;
+				};
+				class Item1
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4666.8345,8.9014387,2525.8689};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SL""], [""marker"", ""ASL"", ""ColorRed""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha Squad Leader@Alpha SL";
+								isPlayable=1;
+							};
+							id=6;
+							type="B_Soldier_SL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4668.8345,8.9014387,2524.1001};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Medic""], [""marker"", ""AM"", ""ColorRed""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha Squad Medic@Alpha SL";
+								isPlayable=1;
+							};
+							id=7;
+							type="B_medic_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=8;
+				};
+				class Item2
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4664.8345,8.9956284,2513.1509};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""A1"", ""ColorRed""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 1 Fireteam Leader@Alpha 1";
+								isPlayable=1;
+							};
+							id=9;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4665.8345,9.0014391,2511.4165};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 1 Automatic Rifleman@Alpha 1";
+								isPlayable=1;
+							};
+							id=10;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4668.8345,9.0014391,2511.2759};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 1 Assistant Automatic Rifleman@Alpha 1";
+								isPlayable=1;
+							};
+							id=11;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4670.8345,9.0014391,2511.4399};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 1 Rifleman (AT)@Alpha 1";
+								isPlayable=1;
+							};
+							id=12;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=13;
+				};
+				class Item3
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4663.8345,9.0014391,2502.3267};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""A2"", ""ColorRed""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 2 Fireteam Leader@Alpha 2";
+								isPlayable=1;
+							};
+							id=14;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4665.8345,9.0014391,2500.6626};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 2 Automatic Rifleman@Alpha 2";
+								isPlayable=1;
+							};
+							id=15;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4667.8345,9.0014391,2500.436};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 2 Assistant Automatic Rifleman@Alpha 2";
+								isPlayable=1;
+							};
+							id=16;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4669.8345,9.0014391,2500.4595};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 2 Rifleman (AT)@Alpha 2";
+								isPlayable=1;
+							};
+							id=17;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=18;
+				};
+				class Item4
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4662.8345,9.0014391,2492.6978};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""A3"", ""ColorRed""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 3 Fireteam Leader@Alpha 3";
+								isPlayable=1;
+							};
+							id=19;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4664.8345,9.0014391,2490.4321};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 3 Automatic Rifleman@Alpha 3";
+								isPlayable=1;
+							};
+							id=20;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4667.8345,9.0014391,2490.311};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 3 Assistant Automatic Rifleman@Alpha 3";
+								isPlayable=1;
+							};
+							id=21;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4669.8345,9.0014391,2490.2329};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Alpha 3 Rifleman (AT)@Alpha 3";
+								isPlayable=1;
+							};
+							id=22;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=23;
+				};
+				class Item5
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4694.8345,9.0014391,2525.3689};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SL""], [""marker"", ""BSL"", ""ColorBlue""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo Squad Leader @Bravo SL";
+								isPlayable=1;
+							};
+							id=24;
+							type="B_Soldier_SL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4697.8345,9.0014391,2523.5103};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Medic""], [""marker"", ""BM"", ""ColorBlue""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo Squad Medic@Bravo SL";
+								isPlayable=1;
+							};
+							id=25;
+							type="B_medic_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=26;
+				};
+				class Item6
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4692.8345,8.9014387,2514.3071};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""B1"", ""ColorBlue""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 1 Fireteam Leader@Bravo 1";
+								isPlayable=1;
+							};
+							id=27;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4694.8345,8.9014387,2511.9868};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 1 Automatic Rifleman@Bravo 1";
+								isPlayable=1;
+							};
+							id=28;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4697.8345,8.9014387,2512.0415};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 1 Assistant Automatic Rifleman@Bravo 1";
+								isPlayable=1;
+							};
+							id=29;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4700.8345,8.9014387,2511.936};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 1 Rifleman (AT)@Bravo 1";
+								isPlayable=1;
+							};
+							id=30;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=31;
+				};
+				class Item7
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4693.8345,8.9479227,2502.729};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""B2"", ""ColorBlue""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 2 Fireteam Leader@Bravo 2";
+								isPlayable=1;
+							};
+							id=32;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4694.8345,8.9614115,2500.7173};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 2 Automatic Rifleman@Bravo 2";
+								isPlayable=1;
+							};
+							id=33;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4697.8345,8.9614458,2500.5493};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 2 Assistant Automatic Rifleman@Bravo 2";
+								isPlayable=1;
+							};
+							id=34;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4700.8345,8.9608231,2500.5962};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 2 Rifleman (AT)@Bravo 2";
+								isPlayable=1;
+							};
+							id=35;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=36;
+				};
+				class Item8
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4692.8345,9.0014391,2492.2915};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""B3"", ""ColorBlue""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 3 Fireteam Leader@Bravo 3";
+								isPlayable=1;
+							};
+							id=37;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4694.8345,9.0014391,2490.0181};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 3 Automatic Rifleman@Bravo 3";
+								isPlayable=1;
+							};
+							id=38;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4697.8345,9.0014391,2490.022};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 3 Assistant Automatic Rifleman@Bravo 3";
+								isPlayable=1;
+							};
+							id=39;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4700.8345,9.0014391,2490.022};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Bravo 3 Rifleman (AT)@Bravo 3";
+								isPlayable=1;
+							};
+							id=40;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=41;
+				};
+				class Item9
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4732.8345,9.0014391,2525.0798};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SL""], [""marker"", ""CSL"", ""ColorGreen""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie Squad Leader@Charlie SL";
+								isPlayable=1;
+							};
+							id=42;
+							type="B_Soldier_SL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4735.8345,9.0014391,2522.6899};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Medic""], [""marker"", ""CM"", ""ColorGreen""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie Squad Medic@Charlie SL";
+								isPlayable=1;
+							};
+							id=43;
+							type="B_medic_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=44;
+				};
+				class Item10
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4730.8345,9.0014391,2514.9243};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""C1"", ""ColorGreen""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 1 Fireteam Leader@Charlie 1";
+								isPlayable=1;
+							};
+							id=45;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4733.8345,9.0014391,2512.9634};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 1 Automatic Rifleman@Charlie 1";
+								isPlayable=1;
+							};
+							id=46;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4735.8345,9.0014391,2512.8462};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 1 Assistant Automatic Rifleman@Charlie 1";
+								isPlayable=1;
+							};
+							id=47;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4739.8345,9.0014391,2512.8657};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 1 Rifleman (AT)@Charlie 1";
+								isPlayable=1;
+							};
+							id=48;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=49;
+				};
+				class Item11
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4729.8345,9.0014391,2502.7798};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""C2"", ""ColorGreen""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 2 Fireteam Leader@Charlie 2";
+								isPlayable=1;
+							};
+							id=50;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4732.8345,9.0014391,2500.6392};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 2 Automatic Rifleman@Charlie 2";
+								isPlayable=1;
+							};
+							id=51;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4734.8345,9.0014391,2500.5024};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 2 Assistant Automatic Rifleman@Charlie 2";
+								isPlayable=1;
+							};
+							id=52;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4738.8345,9.0014391,2500.4087};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 2 Rifleman (AT)@Charlie 2";
+								isPlayable=1;
+							};
+							id=53;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=54;
+				};
+				class Item12
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4729.8345,8.904335,2492.9321};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""C3"", ""ColorGreen""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 3 Fireteam Leader@Charlie 3";
+								isPlayable=1;
+							};
+							id=55;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4732.8345,8.9136515,2490.6313};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 3 Automatic Rifleman@Charlie 3";
+								isPlayable=1;
+							};
+							id=56;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4734.8345,8.937974,2490.4556};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 3 Assistant Automatic Rifleman@Charlie 3";
+								isPlayable=1;
+							};
+							id=57;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4737.8345,8.9776659,2490.4321};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Charlie 3 Rifleman (AT)@Charlie 3";
+								isPlayable=1;
+							};
+							id=58;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=59;
+				};
+				class Item13
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4757.8345,8.9619427,2524.5876};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SL""], [""marker"", ""DSL"", ""ColorBrown""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta Squad Leader@Delta SL";
+								isPlayable=1;
+							};
+							id=60;
+							type="B_Soldier_SL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4760.8345,8.9263258,2521.9165};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""Medic""], [""marker"", ""DM"", ""ColorBrown""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta Squad Medic@Delta SL";
+								isPlayable=1;
+							};
+							id=61;
+							type="B_medic_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=62;
+				};
+				class Item14
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4756.8345,8.9014387,2515.6431};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""D1"", ""ColorBrown""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 1 Fireteam Leader@Delta 1";
+								isPlayable=1;
+							};
+							id=63;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4758.8345,8.9014387,2513.4946};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 1 Automatic Rifleman@Delta 1";
+								isPlayable=1;
+							};
+							id=64;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4760.8345,8.9014387,2513.4282};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 1 Assistant Automatic Rifleman@Delta 1";
+								isPlayable=1;
+							};
+							id=65;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4763.8345,8.9014387,2513.3931};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 1 Rifleman (AT)@Delta 1";
+								isPlayable=1;
+							};
+							id=66;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=67;
+				};
+				class Item15
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4756.8345,9.0014391,2504.3813};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""D2"", ""ColorBrown""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 2 Fireteam Leader@Delta 2";
+								isPlayable=1;
+							};
+							id=68;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4758.8345,9.0014391,2501.3345};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 2 Automatic Rifleman@Delta 2";
+								isPlayable=1;
+							};
+							id=69;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4761.8345,9.0014391,2501.2642};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 2 Assistant Automatic Rifleman@Delta 2";
+								isPlayable=1;
+							};
+							id=70;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4764.8345,9.0014391,2501.2173};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 2 Rifleman (AT)@Delta 2";
+								isPlayable=1;
+							};
+							id=71;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=72;
+				};
+				class Item16
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=4;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4756.8345,9.0014391,2492.4243};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""FTL""], [""marker"", ""D3"", ""ColorBrown""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 3 Fireteam Leader@Delta 3";
+								isPlayable=1;
+							};
+							id=73;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4758.8345,9.0014391,2490.1704};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AR""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 3 Automatic Rifleman@Delta 3";
+								isPlayable=1;
+							};
+							id=74;
+							type="B_soldier_AR_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4761.8345,9.0014391,2490.3579};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""AAR""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 3 Assistant Automatic Rifleman@Delta 3";
+								isPlayable=1;
+							};
+							id=75;
+							type="B_Soldier_A_F";
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4763.8345,9.0014391,2490.2134};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""RAT""]] call hull3_unit_fnc_init;";
+								description="USMC - Delta 3 Rifleman (AT)@Delta 3";
+								isPlayable=1;
+							};
+							id=76;
+							type="B_soldier_LAT_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=77;
+				};
+				class Item17
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4786.8345,9.0014391,2485.186};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MMGAG""], [""marker"", ""MMG1"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MMG 1 Leader@MMG 1";
+								isPlayable=1;
+							};
+							id=78;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4790.8345,8.9998674,2482.4321};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - MMG 1 Gunner@MMG 1";
+								isPlayable=1;
+							};
+							id=79;
+							type="B_soldier_AR_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=80;
+				};
+				class Item18
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4804.8345,9.0014391,2486.2563};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MMGAG""], [""marker"", ""MMG2"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MMG 2 Leader@MMG 2";
+								isPlayable=1;
+							};
+							id=81;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4808.8345,9.0014391,2483.6157};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - MMG 2 Gunner@MMG 2";
+								isPlayable=1;
+							};
+							id=82;
+							type="B_soldier_AR_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=83;
+				};
+				class Item19
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4821.8345,9.0014391,2485.6782};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MMGAG""], [""marker"", ""MMG3"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MMG 3 Leader@MMG 3";
+								isPlayable=1;
+							};
+							id=84;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4824.8345,9.0014391,2482.9907};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - MMG 3 Gunner@MMG 3";
+								isPlayable=1;
+							};
+							id=85;
+							type="B_soldier_AR_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=86;
+				};
+				class Item20
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4839.8345,9.0014391,2486.772};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MMGAG""], [""marker"", ""MMG4"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MMG 4 Leader@MMG 4";
+								isPlayable=1;
+							};
+							id=87;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4843.8345,9.0014391,2484.1392};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - MMG 4 Gunner@MMG 4";
+								isPlayable=1;
+							};
+							id=88;
+							type="B_soldier_AR_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=89;
+				};
+				class Item21
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4788.8345,8.9503098,2468.1626};
+								angles[]={0,0,6.2698579};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATAG""], [""marker"", ""MAT1"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 1 Leader@MAT 1";
+								isPlayable=1;
+							};
+							id=90;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4784.8345,8.9220562,2461.5962};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATG""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 1 Gunner@MAT 1";
+								isPlayable=1;
+							};
+							id=91;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4792.8345,8.9824362,2461.4751};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 1 Ammo Carrier@MAT 1";
+								isPlayable=1;
+							};
+							id=92;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=93;
+				};
+				class Item22
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4805.8345,8.9014387,2467.604};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATAG""], [""marker"", ""MAT2"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 2 Leader@MAT 2";
+								isPlayable=1;
+							};
+							id=94;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4801.8345,8.9626608,2461.1235};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATG""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 2 Gunner@MAT 2";
+								isPlayable=1;
+							};
+							id=95;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4809.8345,8.9014387,2460.686};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 2 Ammo Carrier@MAT 2";
+								isPlayable=1;
+							};
+							id=96;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=97;
+				};
+				class Item23
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4788.8345,8.9741039,2454.6001};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATAG""], [""marker"", ""MAT3"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 3 Leader@MAT 3";
+								isPlayable=1;
+							};
+							id=98;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4784.8345,9.0014391,2448.0454};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATG""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 3 Gunner@MAT 3";
+								isPlayable=1;
+							};
+							id=99;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4793.8345,9.0014391,2447.5063};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 3 Ammo Carrier@MAT 3";
+								isPlayable=1;
+							};
+							id=100;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=101;
+				};
+				class Item24
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4806.8345,8.9910965,2453.9907};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATAG""], [""marker"", ""MAT4"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 4 Leader@MAT 4";
+								isPlayable=1;
+							};
+							id=102;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4802.8345,8.9684248,2447.5259};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATG""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 4 Gunner@MAT 4";
+								isPlayable=1;
+							};
+							id=103;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4810.8345,8.956975,2447.061};
+								angles[]={0,0,6.2698579};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - MAT 4 Ammo Carrier@MAT 4";
+								isPlayable=1;
+							};
+							id=104;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=105;
+				};
+				class Item25
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4824.8345,9.0014391,2466.6313};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATAG""], [""marker"", ""HAT1"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 1 Leader@HAT 1";
+								isPlayable=1;
+							};
+							id=106;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4820.8345,8.9792347,2459.9478};
+								angles[]={0,0,0.013327583};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATG""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 1 Gunner@HAT 1";
+								isPlayable=1;
+							};
+							id=107;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4828.8345,9.0014391,2459.6665};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 1 Ammo Carrier@HAT 1";
+								isPlayable=1;
+							};
+							id=108;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=109;
+				};
+				class Item26
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4839.8345,8.9166546,2466.4087};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATAG""], [""marker"", ""HAT2"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 2 Leader@HAT 2";
+								isPlayable=1;
+							};
+							id=110;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4836.8345,9.0014391,2459.8071};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATG""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 2 Gunner@HAT 2";
+								isPlayable=1;
+							};
+							id=111;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4844.8345,9.0014391,2459.5806};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 2 Ammo Carrier@HAT 2";
+								isPlayable=1;
+							};
+							id=112;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=113;
+				};
+				class Item27
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4824.8345,9.0014391,2453.811};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATAG""], [""marker"", ""HAT3"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 3 Leader@HAT 3";
+								isPlayable=1;
+							};
+							id=114;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4820.8345,9.0014391,2447.1509};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATG""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 3 Gunner@HAT 3";
+								isPlayable=1;
+							};
+							id=115;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4829.8345,9.0014391,2446.8462};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 3 Ammo Carrier@HAT 3";
+								isPlayable=1;
+							};
+							id=116;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=117;
+				};
+				class Item28
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4839.8345,9.0014391,2453.4321};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATAG""], [""marker"", ""HAT4"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 4 Leader@HAT 4";
+								isPlayable=1;
+							};
+							id=118;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4836.8345,9.0014391,2446.854};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATG""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 4 Gunner@HAT 4";
+								isPlayable=1;
+							};
+							id=119;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4844.8345,9.0014391,2446.6118};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - HAT 4 Ammo Carrier@HAT 4";
+								isPlayable=1;
+							};
+							id=120;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=121;
+				};
+				class Item29
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4824.8345,8.9165354,2438.6821};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATAG""], [""marker"", ""DHAT1"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 1 Leader@DHAT 1";
+								isPlayable=1;
+							};
+							id=122;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4820.8345,8.9979229,2431.979};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATG""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 1 Gunner@DHAT 1";
+								isPlayable=1;
+							};
+							id=123;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4828.8345,8.9795218,2431.6938};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 1 Ammo Carrier@DHAT 1";
+								isPlayable=1;
+							};
+							id=124;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=125;
+				};
+				class Item30
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4839.8345,9.0014391,2438.4165};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATAG""], [""marker"", ""DHAT2"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 2 Leader@DHAT 2";
+								isPlayable=1;
+							};
+							id=126;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4836.8345,8.9166241,2431.854};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATAG""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 2 Assistant Gunner@DHAT 2";
+								isPlayable=1;
+							};
+							id=127;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4844.8345,9.0014391,2431.6353};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 2 Ammo Carrier@DHAT 2";
+								isPlayable=1;
+							};
+							id=128;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=129;
+				};
+				class Item31
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4824.8345,9.0014391,2425.8774};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATAG""], [""marker"", ""DHAT3"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 3 Leader@DHAT 3";
+								isPlayable=1;
+							};
+							id=130;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4820.8345,9.0014391,2419.1626};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATG""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 3 Gunner@DHAT 3";
+								isPlayable=1;
+							};
+							id=131;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4829.8345,9.0014391,2418.8813};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 3 Ammo Carrier@DHAT 3";
+								isPlayable=1;
+							};
+							id=132;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=133;
+				};
+				class Item32
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4840.8345,8.9182329,2425.4556};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATAG""], [""marker"", ""DHAT4"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 4 Leader@DHAT 4";
+								isPlayable=1;
+							};
+							id=134;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4836.8345,9.0014391,2418.8501};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATG""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 4 Assistant Gunner@DHAT 4";
+								isPlayable=1;
+							};
+							id=135;
+							type="B_soldier_AT_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4844.8345,8.9555769,2418.6548};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""DHATAC""]] call hull3_unit_fnc_init;";
+								description="USMC - DHAT 4 Ammo Carrier@DHAT 4";
+								isPlayable=1;
+							};
+							id=136;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=137;
+				};
+				class Item33
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4864.8345,8.9705305,2460.397};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGAG""], [""marker"", ""HMG1"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 1 Leader@HMG 1";
+								isPlayable=1;
+							};
+							id=138;
+							type="B_support_AMG_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4868.8345,8.9502335,2456.2095};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGAG""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 1 Assistant Gunner@HMG 1";
+								isPlayable=1;
+							};
+							id=139;
+							type="B_Soldier_A_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4860.8345,8.9014387,2456.3501};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 1 Gunner@HMG 1";
+								isPlayable=1;
+							};
+							id=140;
+							type="B_support_MG_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=141;
+				};
+				class Item34
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4881.8345,9.0014391,2460.1431};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGAG""], [""marker"", ""HMG2"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 2 Leader@HMG 2";
+								isPlayable=1;
+							};
+							id=142;
+							type="B_support_AMG_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4885.8345,9.0014391,2455.9712};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGAG""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 2 Assistant Gunner@HMG 2";
+								isPlayable=1;
+							};
+							id=143;
+							type="B_Soldier_A_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4877.8345,8.9864178,2456.0884};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 2 Gunner@HMG 2";
+								isPlayable=1;
+							};
+							id=144;
+							type="B_support_MG_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=145;
+				};
+				class Item35
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4864.8345,8.9293623,2450.4556};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGAG""], [""marker"", ""HMG3"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 3 Leader@HMG 3";
+								isPlayable=1;
+							};
+							id=146;
+							type="B_support_AMG_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4868.8345,8.9670343,2446.2954};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGAG""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 3 Assistant Gunner@HMG 3";
+								isPlayable=1;
+							};
+							id=147;
+							type="B_Soldier_A_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4860.8345,8.9833212,2446.4087};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 3 Gunner@HMG 3";
+								isPlayable=1;
+							};
+							id=148;
+							type="B_support_MG_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=149;
+				};
+				class Item36
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4881.8345,8.9675093,2450.6704};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGAG""], [""marker"", ""HMG4"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 4 Leader@HMG 4";
+								isPlayable=1;
+							};
+							id=150;
+							type="B_support_AMG_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4885.8345,8.9652176,2446.4985};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGAG""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 4 Assistant Gunner@HMG 4";
+								isPlayable=1;
+							};
+							id=151;
+							type="B_Soldier_A_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4877.8345,8.9014387,2446.647};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""HMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - HMG 4 Gunner@HMG 4";
+								isPlayable=1;
+							};
+							id=152;
+							type="B_support_MG_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=153;
+				};
+				class Item37
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4864.8345,9.0014391,2435.9399};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGAG""], [""marker"", ""GMG1"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 1 Leader@GMG 1";
+								isPlayable=1;
+							};
+							id=154;
+							type="B_support_AMG_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4868.8345,9.0014391,2431.7563};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGAG""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 1 Assistant Gunner@GMG 1";
+								isPlayable=1;
+							};
+							id=155;
+							type="B_Soldier_A_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4860.8345,9.0014391,2431.9087};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 1 Gunner@GMG 1";
+								isPlayable=1;
+							};
+							id=156;
+							type="B_support_GMG_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=157;
+				};
+				class Item38
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4881.8345,8.9308882,2436.0063};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGAG""], [""marker"", ""GMG2"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 2 Leader@GMG 2";
+								isPlayable=1;
+							};
+							id=158;
+							type="B_support_AMG_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4885.8345,8.9779587,2431.811};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGAG""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 2 Assistant Gunner@GMG 2";
+								isPlayable=1;
+							};
+							id=159;
+							type="B_Soldier_A_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4877.8345,9.0014391,2431.9478};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 2 Gunner@GMG 2";
+								isPlayable=1;
+							};
+							id=160;
+							type="B_support_GMG_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=161;
+				};
+				class Item39
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4864.8345,9.0014391,2426.3618};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGAG""], [""marker"", ""GMG3"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 3 Leader@GMG 3";
+								isPlayable=1;
+							};
+							id=162;
+							type="B_support_AMG_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4868.8345,9.0014391,2422.1938};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGAG""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 3 Assistant Gunner@GMG 3";
+								isPlayable=1;
+							};
+							id=163;
+							type="B_Soldier_A_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4860.8345,9.0014391,2422.3345};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 3 Gunner@GMG 3";
+								isPlayable=1;
+							};
+							id=164;
+							type="B_support_GMG_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=165;
+				};
+				class Item40
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4881.8345,9.0014391,2426.4399};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGAG""], [""marker"", ""GMG4"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 4 Leader@GMG 4";
+								isPlayable=1;
+							};
+							id=166;
+							type="B_support_AMG_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4885.8345,9.0014391,2422.2368};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGAG""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 4 Assistant Gunner@GMG 4";
+								isPlayable=1;
+							};
+							id=167;
+							type="B_Soldier_A_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4877.8345,9.0014391,2422.3892};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""GMGG""]] call hull3_unit_fnc_init;";
+								description="USMC - GMG 4 Gunner@GMG 4";
+								isPlayable=1;
+							};
+							id=168;
+							type="B_support_GMG_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=169;
+				};
+				class Item41
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4864.8345,9.0014391,2489.8774};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMAG""], [""marker"", ""SAM1"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 1 Leader@SAM 1";
+								isPlayable=1;
+							};
+							id=170;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4860.8345,9.0014391,2483.186};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMG""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 1 Gunner@SAM 1";
+								isPlayable=1;
+							};
+							id=171;
+							type="B_soldier_AA_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4869.8345,9.0014391,2482.8501};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMAC""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 1 Ammo Carrier@SAM 1";
+								isPlayable=1;
+							};
+							id=172;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=173;
+				};
+				class Item42
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4881.8345,9.0014391,2489.9907};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMAG""], [""marker"", ""SAM2"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 2 Leader@SAM 2";
+								isPlayable=1;
+							};
+							id=174;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4877.8345,9.0014391,2483.3071};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMG""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 2 Gunner@SAM 2";
+								isPlayable=1;
+							};
+							id=175;
+							type="B_soldier_AA_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4886.8345,9.0014391,2482.9907};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMAC""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 2 Ammo Carrier@SAM 2";
+								isPlayable=1;
+							};
+							id=176;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=177;
+				};
+				class Item43
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4864.8345,9.0014391,2474.3774};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMAG""], [""marker"", ""SAM3"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 3 Leader@SAM 3";
+								isPlayable=1;
+							};
+							id=178;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4860.8345,9.0014391,2467.6978};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMG""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 3 Gunner@SAM 3";
+								isPlayable=1;
+							};
+							id=179;
+							type="B_soldier_AA_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4868.8345,9.0014391,2467.3931};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMAC""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 3 Ammo Carrier@SAM 3";
+								isPlayable=1;
+							};
+							id=180;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=181;
+				};
+				class Item44
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4881.8345,9.0793848,2474.061};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMAG""], [""marker"", ""SAM4"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 4 Leader@SAM 4";
+								isPlayable=1;
+							};
+							id=182;
+							type="B_Soldier_TL_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4877.8345,9.0014391,2467.3774};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMG""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 4 Gunner@SAM 4";
+								isPlayable=1;
+							};
+							id=183;
+							type="B_soldier_AA_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4885.8345,9.0396442,2467.0806};
+								angles[]={6.2698536,0,0.013332055};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SAMAC""]] call hull3_unit_fnc_init;";
+								description="USMC - SAM 4 Ammo Carrier@SAM 4";
+								isPlayable=1;
+							};
+							id=184;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=185;
+				};
+				class Item45
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4788.8345,9.0014391,2438.0259};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRAG""], [""marker"", ""MTR1"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 1 Leader@Mortar 1";
+								isPlayable=1;
+							};
+							id=186;
+							type="B_support_AMort_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4784.8345,8.9201794,2431.4556};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRG""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 1 Gunner@Mortar 1";
+								isPlayable=1;
+							};
+							id=187;
+							type="B_support_Mort_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4792.8345,9.0014391,2431.3618};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRAC""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 1 Ammo Carrier@Mortar 1";
+								isPlayable=1;
+							};
+							id=188;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=189;
+				};
+				class Item46
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4805.8345,9.0014391,2438.0298};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRAG""], [""marker"", ""MTR2"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 2 Leader@Mortar 2";
+								isPlayable=1;
+							};
+							id=190;
+							type="B_support_AMort_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4801.8345,9.0014391,2431.4946};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRG""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 2 Gunner@Mortar 2";
+								isPlayable=1;
+							};
+							id=191;
+							type="B_support_Mort_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4809.8345,9.0014391,2431.3384};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRAC""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 2 Ammo Carrier@Mortar 2";
+								isPlayable=1;
+							};
+							id=192;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=193;
+				};
+				class Item47
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4788.8345,8.9014387,2426.0923};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRAG""], [""marker"", ""MTR3"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 3 Leader@Mortar 3";
+								isPlayable=1;
+							};
+							id=194;
+							type="B_support_AMort_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4784.8345,8.9014387,2419.5454};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRG""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 3 Gunner@Mortar 3";
+								isPlayable=1;
+							};
+							id=195;
+							type="B_support_Mort_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4792.8345,8.9014387,2419.4009};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRAC""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 3 Ammo Carrier@Mortar 3";
+								isPlayable=1;
+							};
+							id=196;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=197;
+				};
+				class Item48
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4806.8345,9.0014391,2426.0923};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRAG""], [""marker"", ""MTR4"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 4 Leader@Mortar 4";
+								isPlayable=1;
+							};
+							id=198;
+							type="B_support_AMort_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4801.8345,8.9612226,2419.5337};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="CORPORAL";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRG""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 4 Gunner@Mortar 4";
+								isPlayable=1;
+							};
+							id=199;
+							type="B_support_AMort_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4810.8345,9.0014391,2419.4438};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""MTRAC""]] call hull3_unit_fnc_init;";
+								description="USMC - MTR 4 Ammo Carrier@Mortar 4";
+								isPlayable=1;
+							};
+							id=200;
+							type="B_Soldier_A_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=201;
+				};
+				class Item49
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4863.8345,8.9048319,2512.2954};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SN""], [""marker"", ""ST1"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - Sniper 1 Marksmen@Sniper 1";
+								isPlayable=1;
+							};
+							id=202;
+							type="B_sniper_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4867.8345,8.9322796,2510.2368};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SP""]] call hull3_unit_fnc_init;";
+								description="USMC - Sniper 1 Spotter@Sniper 1";
+								isPlayable=1;
+							};
+							id=203;
+							type="B_spotter_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=204;
+				};
+				class Item50
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4874.8345,8.9992361,2512.354};
+								angles[]={0,0,0.013327583};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SN""], [""marker"", ""ST2"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - Sniper 2 Marksmen@Sniper 2";
+								isPlayable=1;
+							};
+							id=205;
+							type="B_sniper_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4877.8345,9.0014391,2510.3188};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SP""]] call hull3_unit_fnc_init;";
+								description="USMC - Sniper 2 Spotter@Sniper 2";
+								isPlayable=1;
+							};
+							id=206;
+							type="B_spotter_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=207;
+				};
+				class Item51
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4864.8345,8.9992599,2505.2134};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SN""], [""marker"", ""ST3"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - Sniper 3 Marksmen@Sniper 3";
+								isPlayable=1;
+							};
+							id=208;
+							type="B_sniper_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4867.8345,9.0014391,2503.1665};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SP""]] call hull3_unit_fnc_init;";
+								description="USMC - Sniper 3 Spotter@Sniper 3";
+								isPlayable=1;
+							};
+							id=209;
+							type="B_spotter_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=210;
+				};
+				class Item52
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4874.8345,9.0014391,2504.7876};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SN""], [""marker"", ""ST4"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - Sniper 4 Marksmen@Sniper 4";
+								isPlayable=1;
+							};
+							id=211;
+							type="B_sniper_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4877.8345,9.0014391,2502.7759};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init="[this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""SP""]] call hull3_unit_fnc_init;";
+								description="USMC - Sniper 4 Spotter@Sniper 4";
+								isPlayable=1;
+							};
+							id=212;
+							type="B_spotter_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=213;
+				};
+				class Item53
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4787.8345,9.0014391,2513.1235};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENG""], [""marker"", ""ENG1"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 1 Leader@Engineer 1";
+								isPlayable=1;
+							};
+							id=214;
+							type="B_engineer_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4791.8345,8.9637737,2509.7251};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENGA""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 1 Assistant@Engineer 1";
+								isPlayable=1;
+							};
+							id=215;
+							type="B_engineer_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4785.8345,8.9688797,2510.1079};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENGA""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 1 Assistant@Engineer 1";
+								isPlayable=1;
+							};
+							id=216;
+							type="B_engineer_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=217;
+				};
+				class Item54
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4807.8345,8.9014387,2512.9712};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENG""], [""marker"", ""ENG2"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 2 Leader@Engineer 2";
+								isPlayable=1;
+							};
+							id=218;
+							type="B_engineer_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4810.8345,8.9014387,2509.6157};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENGA""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 2 Assistant@Engineer 2";
+								isPlayable=1;
+							};
+							id=219;
+							type="B_engineer_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4804.8345,8.9369736,2510.0103};
+								angles[]={0,0,6.2698579};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENGA""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 2 Assistant@Engineer 2";
+								isPlayable=1;
+							};
+							id=220;
+							type="B_engineer_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=221;
+				};
+				class Item55
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4826.8345,8.9014387,2512.7407};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENG""], [""marker"", ""ENG3"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 3 Leader@Engineer 3";
+								isPlayable=1;
+							};
+							id=222;
+							type="B_engineer_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4829.8345,8.9438953,2509.3657};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENGA""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 3 Assistant@Engineer 3";
+								isPlayable=1;
+							};
+							id=223;
+							type="B_engineer_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4823.8345,8.9192362,2509.7524};
+								angles[]={0,0,0.013327583};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENGA""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 3 Assistant@Engineer 3";
+								isPlayable=1;
+							};
+							id=224;
+							type="B_engineer_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=225;
+				};
+				class Item56
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4846.8345,9.0014391,2512.6274};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENG""], [""marker"", ""ENG4"", ""ColorOrange""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 4 Leader@Engineer 4";
+								isPlayable=1;
+							};
+							id=226;
+							type="B_engineer_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4849.8345,9.0014391,2509.2524};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENGA""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 4 Assistant@Engineer 4";
+								isPlayable=1;
+							};
+							id=227;
+							type="B_engineer_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4843.8345,9.0014391,2509.6118};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""ENGA""]] call hull3_unit_fnc_init;";
+								description="USMC - Engineering 4 Assistant@Engineer 4";
+								isPlayable=1;
+							};
+							id=228;
+							type="B_engineer_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=229;
+				};
+				class Item57
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4667.8345,9.0014391,2474.0454};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VC""], [""marker"", ""APC1"", ""ColorRed""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 1 Commander@APC 1";
+								isPlayable=1;
+							};
+							id=230;
+							type="B_crew_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4664.8345,9.0014391,2470.061};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VD""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 1 Driver@APC 1";
+								isPlayable=1;
+							};
+							id=231;
+							type="B_crew_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4670.8345,9.0014391,2469.9399};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VG""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 1 Gunner@APC 1";
+								isPlayable=1;
+							};
+							id=232;
+							type="B_crew_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=233;
+				};
+				class Item58
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4698.8345,8.9949722,2474.5649};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VC""], [""marker"", ""APC2"", ""ColorBlue""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 2 Commander@APC 2";
+								isPlayable=1;
+							};
+							id=234;
+							type="B_crew_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4695.8345,8.9370041,2470.2173};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VD""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 2 Driver@APC 2";
+								isPlayable=1;
+							};
+							id=235;
+							type="B_crew_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4701.8345,8.9401808,2470.4556};
+								angles[]={6.2698579,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VG""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 2 Gunner@APC 2";
+								isPlayable=1;
+							};
+							id=236;
+							type="B_crew_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=237;
+				};
+				class Item59
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4735.8345,9.0014391,2473.5728};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VC""], [""marker"", ""APC3"", ""ColorGreen""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 3 Commander@APC 3";
+								isPlayable=1;
+							};
+							id=238;
+							type="B_crew_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4731.8345,9.0014391,2469.2329};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VD""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 3 Driver@APC 3";
+								isPlayable=1;
+							};
+							id=239;
+							type="B_crew_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4737.8345,9.0014391,2469.0532};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VG""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 3 Gunner@APC 3";
+								isPlayable=1;
+							};
+							id=240;
+							type="B_crew_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=241;
+				};
+				class Item60
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=3;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4761.8345,8.9282846,2473.7017};
+								angles[]={0.013332055,0,6.2698536};
+							};
+							side="West";
+							flags=6;
+							class Attributes
+							{
+								skill=0.60000002;
+								rank="SERGEANT";
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VC""], [""marker"", ""APC4"", ""ColorBrown""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 4 Commander@APC 4";
+								isPlayable=1;
+							};
+							id=242;
+							type="B_crew_F";
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4758.8345,9.0014391,2469.3306};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VD""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 4 Driver@APC 4";
+								isPlayable=1;
+							};
+							id=243;
+							type="B_crew_F";
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4764.8345,8.9828024,2468.9478};
+								angles[]={0.013327583,0,0};
+							};
+							side="West";
+							flags=4;
+							class Attributes
+							{
+								skill=0.60000002;
+								init=" [this, [""faction"", ""USM_USMC_90_WD""], [""gear"", ""VG""]] call hull3_unit_fnc_init;";
+								description="USMC - APC 4 Gunner@APC 4";
+								isPlayable=1;
+							};
+							id=244;
+							type="B_crew_F";
+						};
+					};
+					class Attributes
+					{
+					};
+					id=245;
+				};
+			};
+			id=277;
+			atlOffset=-0.039761543;
+		};
+	};
+};

@@ -1,0 +1,1 @@
+execVM "scripts\update_arrow.sqf";
