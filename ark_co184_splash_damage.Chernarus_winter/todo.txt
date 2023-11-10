@@ -1,8 +1,35 @@
-- Turn scripts in to functions:
+- Turn scripts into functions:
 	- https://github.com/Ligthert/SL_Wild_Ravens.Chernarus/blob/master/description.ext#L1-L27
 	- https://github.com/Ligthert/SL_Wild_Ravens.Chernarus/tree/master/functions/common
 
-- Create trench script:
+- Create terrain deformation line function:
+	- Parameters:
+		- _start (pos)
+		- _stop (pos)
+		- _alt array[min, max] (randomize between these two)
+		- _width (int, default 1) ??
+		- _relative (bool) default=true
+	- structure:
+		- get distance
+		- getPos in meter increments (using direction)
+		- _width != 1: use relpos at a +90 & + 270 degree angles
+	- notes:
+		- test if 1m intervals are sufficient?
+		- test if this is a drain on performance?
+
+- Create terrain deformation circle function:
+	- Parameters:
+		- _pos
+		- radius
+		- alt int or array[min,max]
+		- relative (bool) default=true
+	- structure:
+		- go to pos
+		- relpos the fuck out of it
+	- Considerations:
+		- Maybe have a step function?
+
+- Create trench function:
 	- Specify a start and stop marker
 	- Take terrain height, and lower 1.5 to 2 meter
 	- The trenches must:
@@ -14,6 +41,15 @@
 	- The trenches could:
 		- have branches
 		- branch off into bunkers
+	- Parameters:
+		- _start (pos)
+		- _stop (pos)
+		- _bend (int) number of corners
+		- _alt (int) [min,max] depth or altitude
+		- _sandbax (int) 0: no; 1: both; 2: left; 3: right;
+	- Features:
+		- Be deterministick
+		- Uses sine waves (sin * _bend)
 
 - Create a wall script:
 	- specify a start and stop marker
@@ -24,6 +60,7 @@
 		- Value is an array [_height, width]
 	- optional parameter to specifiy distance between the different lanes
 	- optional parameter to put cortina rolls/barbwire through the center line
+	- Use the trench function?
 
 - Create pit script:
 	- Parameters:
@@ -38,12 +75,12 @@
 - Objectives:
 	- Mortar pit (semi done)
 	- Take out fob (Devil's castle)
-	- Command Outpost (trench system)
-	- ????
+	- Command Outpost (trench system, dug-in bunkers)
+	- Long-range strike capabilities
 
 - Environment:
 	- Patrols?
-	- Mines?
+	- Mines (caching script)?
 	- Retaliation strikes???
+	- When using cars, roadblocks?
 
-- 
