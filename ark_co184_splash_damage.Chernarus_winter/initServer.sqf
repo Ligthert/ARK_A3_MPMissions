@@ -1,2 +1,2 @@
-execVM "scripts\update_arrow.sqf";
-execVM "scripts\drone_state_manager.sqf"
+["ao"] call SL_fnc_avgPlayerPos;
+call SL_fnc_drone_manager;

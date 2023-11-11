@@ -1,6 +1,23 @@
 #include "admiral\admiral.h"
 #include "hull3\hull3.h"
 
+class CfgFunctions
+{
+    class SL
+    {
+        class common
+        {
+            class log{};
+            class countPlayersInAO{};
+            class drone_manager{};
+            class flattenTerrain{};
+            class drawDot{};
+            class avgPlayerPos{};
+            class digLines{};
+        };
+    };
+};
+
 allowProfileGlasses = 0;
 enableDebugConsole = 1;
 disableChannels[]={{2,true,true},{4,true,true},{6,true,true}};

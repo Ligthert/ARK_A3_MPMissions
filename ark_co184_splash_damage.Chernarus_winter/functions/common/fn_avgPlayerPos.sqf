@@ -1,7 +1,10 @@
 // Goal, find the center of all the active BLUFOR units in the AO and send a drone there to spy on them.
 
 // Define the AO by specifying a marker
-private _marker = "ao";
+//private _marker = "ao";
+params ["_marker"];
+
+red_arrow = "Sign_Arrow_Large_F" createVehicle [0,0,0];
 
 // The joy of an endless while loop, so run as long as the scenario is running
 while {true} do {

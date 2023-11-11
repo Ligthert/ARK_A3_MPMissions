@@ -1,0 +1,11 @@
+["init"," "] call SL_fnc_log;
+["init"," ______  ____    __  __     "] call SL_fnc_log;
+["init","/\  _  \/\  _`\ /\ \/\ \    "] call SL_fnc_log;
+["init","\ \ \L\ \ \ \L\ \ \ \/'/'   "] call SL_fnc_log;
+["init"," \ \  __ \ \ ,  /\ \ , <    "] call SL_fnc_log;
+["init","  \ \ \/\ \ \ \\ \\ \ \\`\  "] call SL_fnc_log;
+["init","   \ \_\ \_\ \_\ \_\ \_\ \_\"] call SL_fnc_log;
+["init","    \/_/\/_/\/_/\/ /\/_/\/_/"] call SL_fnc_log;
+["init"," "] call SL_fnc_log;
+["init","       Home of the MILSIM "] call SL_fnc_log;
+["init"," "] call SL_fnc_log;

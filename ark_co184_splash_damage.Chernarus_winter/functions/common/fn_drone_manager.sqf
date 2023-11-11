@@ -1,16 +1,3 @@
-countPlayersInAO = {
-	private _units = [];
-	private _marker = "ao";
-
-	{
-		if (position _x inArea _marker and alive _x) then {
-		  _units pushBack _x;
-		};
-
-	} forEach call BIS_fnc_listPlayers;
-	count _units;
-};
-
 private _drone = objNull;
 
 while {true} do {
@@ -25,7 +12,7 @@ while {true} do {
 	// 1. Is there a player in the AO?
 	// Yes: Continue
 	// No: waitUntil{} there is
-	if (call countPlayersInAO == 0) then {
+	if (call SL_fnc_countPlayersInAO == 0) then {
 	  continue;
 	};
 

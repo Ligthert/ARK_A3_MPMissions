@@ -25,7 +25,7 @@ while {_width != 0} do {
 
 	while { _row_start distance _row_end >= 1 } do {
 	  _step = _row_start getPos [1,_dir];
-	  [_step] call SL_fnc_drawDot;
+	  //[_step] call SL_fnc_drawDot;
 	  _row_start setpos _step;
 
 	  if (_updown == "UP") then {
