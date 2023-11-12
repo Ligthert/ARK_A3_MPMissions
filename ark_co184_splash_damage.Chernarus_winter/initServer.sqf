@@ -1,2 +1,4 @@
-["ao"] call SL_fnc_avgPlayerPos;
-call SL_fnc_drone_manager;
+// Spawning stuff in the background.
+// Calls are blocking
+_avgPos = ["ao"] spawn SL_fnc_avgPlayerPos;
+_drnMan = [] spawn SL_fnc_drone_manager;
