@@ -13,4 +13,5 @@
 	- Retaliation strikes???
 	- When using cars, roadblocks?
 
-- Commands to do arty: https://github.com/Ligthert/LT_A3_MPMissions/blob/7bb757c85084196980790175051fd5057414e72d/LTOP_Fighting_Fuck_Toys.IslaDuala3/fuckPlayers.sqf#L17-L18
+- Trench: Add no grass {createSimpleObject ["Land_ClutterCutter_medium_F", (player modelToWorldVisualWorld [0,2.5,0]), false]}
+"ClutterCutter_small_EP1"
