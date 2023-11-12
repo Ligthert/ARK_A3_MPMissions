@@ -1,5 +1,7 @@
 private _drone = objNull;
 
+["droneManager","Starting droneManager"] call SL_fnc_log;
+
 while {true} do {
 
 	private _drone_class = "CUP_O_Pchela1T_RU";

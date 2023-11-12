@@ -48,3 +48,7 @@ while {_width != 0} do {
 
 
 setTerrainHeight [_path,true];
+
+{
+	createSimpleObject ["ClutterCutter_small_EP1", _x];
+} forEach array;
