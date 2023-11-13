@@ -1,4 +1,4 @@
-params ["_building",["_shuffle", true]];
+params ["_building",["_shuffle", true], ["_step", 1]];
 
 ["filler",format["Building filler started for building %1",_building]] call SL_fnc_log;
 
@@ -17,7 +17,7 @@ private _grp = createGroup [_side,true];
 private _unitArray = getArray (configfile >> "Admiral" >> "UnitTemplates" >> _unitTemplate >> "infantry");
 
 private _scaledBuildingPositions = [];
-for "_i" from 0 to (count _buildingPositions -1) step 1 do {
+for "_i" from 0 to (count _buildingPositions -1) step _step do {
     _scaledBuildingPositions pushBack (_buildingPositions select _i);
 };
 

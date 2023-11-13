@@ -16,6 +16,7 @@ class CfgFunctions
             class digLines{};
             class buildingFiller{};
             class fireArty{};
+            class retaliate{};
         };
     };
 };
@@ -25,9 +26,9 @@ enableDebugConsole = 1;
 disableChannels[]={{2,true,true},{4,true,true},{6,true,true}};
 
 onLoadName = "Splash Damage";
-onLoadMission = "Abject Terror awaits";
+onLoadMission = "Boom💥 boom💥 boom💥 boom💥 I👩 want you👨 in my room🏠 Let's spend the night✨ together💑 From now⌚ until forever♾️ Together👪 in my room🍆🌊";
 author = "Sacha Ligthert";
-loadScreen = "x\ark\addons\hull3\resources\hull3_logo.paa";
+loadScreen = "images\splash_damage.paa";
 
 class Header
 {

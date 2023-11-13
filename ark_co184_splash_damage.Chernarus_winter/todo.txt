@@ -1,17 +1,8 @@
+- Scripts:
+	- Turret/gunner feeder
+
 - Figure out arty spam for players
 	- User arty pothole script
-
-- Objectives:
-	- Mortar pit (semi done)
-	- Take out fob (Devil's castle)
-	- Command Outpost (trench system, dug-in bunkers)
-	- Long-range strike capabilities
-
-- Environment:
-	- Patrols?
-	- Mines (caching script)?
-	- Retaliation strikes???
-	- When using cars, roadblocks?
 
 - Trench: Add no grass {createSimpleObject ["Land_ClutterCutter_medium_F", (player modelToWorldVisualWorld [0,2.5,0]), false]}
 "ClutterCutter_small_EP1"
