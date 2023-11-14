@@ -1,4 +1,4 @@
-["retalliate", "Starting retaliation of the Mortar Base" ] call SL_fnc_log;
+["retalliate", "Starting retaliation: Mortar Base" ] call SL_fnc_log;
 
 // Sound the alarm
 mortar_alarm = true;

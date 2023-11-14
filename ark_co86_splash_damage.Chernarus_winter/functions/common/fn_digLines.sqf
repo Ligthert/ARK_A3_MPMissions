@@ -1,5 +1,3 @@
-["trench","Starting trench tool"] call SL_fnc_log;
-
 params ["_pos","_dir","_dis","_width","_depth","_updown"];
 
 // _pos 	: Needs to be an object

@@ -1,4 +1,4 @@
-["retalliate", "Starting retaliation of the Decoy Base" ] call SL_fnc_log;
+["retalliate", "Starting retaliation: Decoy Base" ] call SL_fnc_log;
 
 // Sound the alarm
 decoy_alarm = true;

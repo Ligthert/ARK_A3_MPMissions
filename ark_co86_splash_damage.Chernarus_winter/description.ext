@@ -17,6 +17,7 @@ class CfgFunctions
             class buildingFiller{};
             class fireArty{};
             class retaliate{};
+            class gunFeeder{};
         };
     };
 };
@@ -26,7 +27,7 @@ enableDebugConsole = 1;
 disableChannels[]={{2,true,true},{4,true,true},{6,true,true}};
 
 onLoadName = "Splash Damage";
-onLoadMission = "Boom💥 boom💥 boom💥 boom💥 I👩 want you👨 in my room🏠 Let's spend the night✨ together💑 From now⌚ until forever♾️ Together👪 in my room🍆🌊";
+onLoadMission = "Boom💥 boom💥 boom💥 boom💥 I👩 want you👨 in my room🏠. Let's spend the night✨ together💑. From now⌚ until forever♾️. Together👪 in my room🍆🌊";
 author = "Sacha Ligthert";
 loadScreen = "images\splash_damage.paa";
 
