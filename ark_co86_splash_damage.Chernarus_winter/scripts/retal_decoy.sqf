@@ -3,7 +3,16 @@
 // Sound the alarm
 decoy_alarm = true;
 
-// Fire the arty
+// Give a hint to the player where they do need to be.
+[art1, whoopsie, 6] spawn SL_fnc_fireArty;
+sleep 3;
+[art2, whoopsie, 6] spawn SL_fnc_fireArty;
+sleep 3;
+[art3, whoopsie, 6] spawn SL_fnc_fireArty;
+
+sleep 15;
+
+// Fire the arty at the decoy base
 [mortar1, decoy_barack_1, 1] spawn SL_fnc_fireArty;
 sleep random 2;
 [mortar2, decoy_base, 1] spawn SL_fnc_fireArty;
@@ -15,3 +24,4 @@ sleep 120;
 
 // Shut off the alarm
 decoy_alarm = false;
+

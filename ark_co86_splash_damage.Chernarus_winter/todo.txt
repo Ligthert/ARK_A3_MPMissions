@@ -1,6 +1,3 @@
-- Scripts:
-	- Turret/gunner feeder
-
 - Figure out arty spam for players
 	- User arty pothole script
 

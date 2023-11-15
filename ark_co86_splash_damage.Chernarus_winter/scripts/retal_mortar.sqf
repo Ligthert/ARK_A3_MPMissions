@@ -4,11 +4,11 @@
 mortar_alarm = true;
 
 // Fire the arty
-[arty1, mortar1, 1] spawn SL_fnc_fireArty;
-sleep random 2;
-[arty2, mortarbase2, 1] spawn SL_fnc_fireArty;
-sleep random 2;
-[arty3, mortarfield, 1] spawn SL_fnc_fireArty;
+[arty1, mortar1, 2] spawn SL_fnc_fireArty;
+sleep 2;
+[arty2, mortarbase2, 2] spawn SL_fnc_fireArty;
+sleep 2;
+[arty3, mortarfield, 2] spawn SL_fnc_fireArty;
 
 // Sleep long enough to warn people before and after
 sleep 120;

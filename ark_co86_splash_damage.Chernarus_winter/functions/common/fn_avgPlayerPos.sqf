@@ -6,7 +6,7 @@ params ["_marker"];
 
 ["avgPlayerPos","Starting avgPlayerPos for marker %1",_marker] call SL_fnc_log;
 
-red_arrow = "Sign_Arrow_Large_F" createVehicle [0,0,0];
+red_arrow = "HeliHEmpty" createVehicle [0,0,0];
 
 // The joy of an endless while loop, so run as long as the scenario is running
 while {true} do {

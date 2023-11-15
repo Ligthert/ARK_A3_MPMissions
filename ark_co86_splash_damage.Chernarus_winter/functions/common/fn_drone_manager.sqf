@@ -9,7 +9,7 @@ while {true} do {
 	private _height = 50 + (50 * _generation);
 
 	// Sleep for a minute
-	sleep 6;
+	sleep 60;
 
 	// 1. Is there a player in the AO?
 	// Yes: Continue
